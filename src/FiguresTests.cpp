@@ -20,7 +20,7 @@ namespace Figures
 		Point b(0.0, 3.0);
 
 		AssertWithPrecision(a.DistanceToPoint(b), std::sqrt(2.0));
-    std::cout << "DistanceBetweenTwoPointsTest passed" << std::endl;
+    	std::cout << "DistanceBetweenTwoPointsTest passed" << std::endl;
 	}
 
 	void FiguresTests::MovePointByVectorTest()
@@ -30,7 +30,7 @@ namespace Figures
 
 		AssertWithPrecision(movedA.GetX(), 2.0);
 		AssertWithPrecision(movedA.GetY(), 2.0);
-    std::cout << "MovePointByVectorTest passed" << std::endl;
+    	std::cout << "MovePointByVectorTest passed" << std::endl;
 	}
 
 	void FiguresTests::RotatePointByAngleAroundPointTest()
@@ -40,7 +40,7 @@ namespace Figures
 
 		AssertWithPrecision(rotatedA.GetX(), 1.0);
 		AssertWithPrecision(rotatedA.GetY(), 0.0);
-    std::cout << "RotatePointByAngleAroundPointTest passed" << std::endl;
+    	std::cout << "RotatePointByAngleAroundPointTest passed" << std::endl;
 	}
 
 	void FiguresTests::PerpendicularSegmentsTest()
@@ -53,7 +53,7 @@ namespace Figures
 		Segment segmentC(Point(5.0, 5.0), Point(2.5, 6.0));
 
 		assert(!segmentA.IsPerpendicular(segmentC));
-    std::cout << "PerpendicularSegmentsTest passed" << std::endl;
+    	std::cout << "PerpendicularSegmentsTest passed" << std::endl;
 	}
 
 	void FiguresTests::ParallelSegmentsTest()
@@ -66,7 +66,7 @@ namespace Figures
 		Segment segmentC(Point(5.0, 5.0), Point(2.5, 6.0));
 
 		assert(!segmentA.IsParallel(segmentC));
-    std::cout << "ParallelSegmentsTest passed" << std::endl;
+    	std::cout << "ParallelSegmentsTest passed" << std::endl;
 	}
 
 	void FiguresTests::AssertWithPrecision(double value, double expectedValue)

@@ -5,8 +5,8 @@
 namespace Figures
 {
 
-  Point::Point(double x, double y) : x_(x), y_(y) {}
-  Point::Point(const Point& point) : x_(point.GetX()), y_(point.GetY()) {}
+  	Point::Point(double x, double y) : x_(x), y_(y) {}
+  	Point::Point(const Point& point) : x_(point.GetX()), y_(point.GetY()) {}
 
 	Point Point::MoveByVector(const Vector& v) const
 	{
